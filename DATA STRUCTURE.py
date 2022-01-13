@@ -1,18 +1,18 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan  9 10:47:14 2022
+# Python program to find Area of a circle 
+  
+def findArea(r): 
+    PI = 3.142
+    return PI * (r*r); 
+  
+# Driver method
+num=float(input("Enter r value:"))
+print("Area is %.6f" % findArea(num)); 
 
-@author: aditi
-"""
 
-# import math module
-from math import pi
 
-# take input from user
-r = float(input ("Input the radius of the circle : "))
+# Python program to accept a file name 
+fn= input("Enter Filename: ")
 
-# compute the area from radius of a circle given by user
-calculateArea = str(pi * r**2);
+f = fn.split(".")
 
-#print result
-print ("The area of the circle with radius " + str(r) + " is: " + calculateArea)
+print ("Extension of the file is : " + f[-1])
